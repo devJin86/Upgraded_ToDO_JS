@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+<head>
+    <title>JavaScript, Ajax and JSON: To Do List</title>
+    <meta charset="utf-8">
+    <script src="todo.js"></script>
+    <link rel="stylesheet" href="todo.css">
+    <script src="http://maps.google.com/maps/api/js?sensor=true"></script>
+</head>
+<body>
+
+<div>
+
+    <h1>My To Do List</h1>
+    <ul id="todoList">
+    </ul>
+    <!-- display the map-->
+    <div id="map">
+    </div>
+    <!--  display the search results //-->
+    <div id="searchResults">
+        <h2>Results</h2>
+        <ul id="searchResultsList">
+        </ul>
+    </div>
+
+    <form>
+        <!--  display the search input //-->
+        <fieldset>
+            <legend>Search to do items</legend>
+            <div class="tableContainer">
+                <div class="tableRow">
+                    <label for="searchTerm">Search: </label>
+                    <input type="text" id="searchTerm" size="35"
+                           placeholder="search term">
+                </div>
+                <div class="tableRow">
+                    <label for="searchButton"></label>
+                    <input type="button" id="searchButton" value="Search">
+                </div>
+            </div>
+        </fieldset>
+        <br>
+
+        <fieldset>
+            <legend>Add a new to do item</legend>
+            <div class="tableContainer">
+                <div class="tableRow">
+                    <label for="task">Task: </label>
+                    <input type="text" id="task" size="35" placeholder="get milk">
+                </div>
+                <div class="tableRow">
+                    <label for="who">Who should do it: </label>
+                    <input type="text" id="who" placeholder="Scott">
+                </div>
+                <div class="tableRow">
+                    <label for="dueDate">Due Date: </label>
+                    <input type="date" id="dueDate">
+                </div>
+                <div class="tableRow">
+                    <label for="submit"></label>
+                    <input type="button" id="submit" value="submit">
+                </div>
+            </div>
+        </fieldset>
+    </form>
+
+</div>
+
+</body>
+</html>
